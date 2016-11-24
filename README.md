@@ -1,6 +1,8 @@
 # Push-Notifications
 
-In order to use firebase push notifications. 
+In order to use firebase push notifications.
+
+----------------------------------------------
 1- Replace GoogleService-info.plist
 How? Create account on firebase. Use the same bundleID as the project. 
 
