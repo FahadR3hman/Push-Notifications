@@ -12,9 +12,13 @@
 		29CBB1051DE6F71B00A75C3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CBB1031DE6F71B00A75C3E /* Main.storyboard */; };
 		29CBB1071DE6F71B00A75C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CBB1061DE6F71B00A75C3E /* Assets.xcassets */; };
 		29CBB10A1DE6F71B00A75C3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CBB1081DE6F71B00A75C3E /* LaunchScreen.storyboard */; };
+		29CBB1121DE6F77700A75C3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29CBB1111DE6F77700A75C3E /* GoogleService-Info.plist */; };
+		918FF98CD2D9490BE78C3458 /* Pods_Push_Notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84491FFD1E2C7A558AF6B54A /* Pods_Push_Notifications.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		124E2CC90E0E28291BE7A73A /* Pods-Push Notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push Notifications.release.xcconfig"; path = "Pods/Target Support Files/Pods-Push Notifications/Pods-Push Notifications.release.xcconfig"; sourceTree = "<group>"; };
+		29A8BF5C1DE6FE260066B2EA /* Push Notifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Push Notifications.entitlements"; sourceTree = "<group>"; };
 		29CBB0FC1DE6F71B00A75C3E /* Push Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push Notifications.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29CBB0FF1DE6F71B00A75C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29CBB1011DE6F71B00A75C3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,9 @@
 		29CBB1061DE6F71B00A75C3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29CBB1091DE6F71B00A75C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29CBB10B1DE6F71B00A75C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29CBB1111DE6F77700A75C3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		29D966A22B7A1A7038E46BCC /* Pods-Push Notifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push Notifications.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Push Notifications/Pods-Push Notifications.debug.xcconfig"; sourceTree = "<group>"; };
+		84491FFD1E2C7A558AF6B54A /* Pods_Push_Notifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Push_Notifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918FF98CD2D9490BE78C3458 /* Pods_Push_Notifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,8 @@
 			children = (
 				29CBB0FE1DE6F71B00A75C3E /* Push Notifications */,
 				29CBB0FD1DE6F71B00A75C3E /* Products */,
+				51F5F3DCB6903B326DB1600E /* Pods */,
+				94A31906D18C45B3D670FC79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +64,33 @@
 		29CBB0FE1DE6F71B00A75C3E /* Push Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				29A8BF5C1DE6FE260066B2EA /* Push Notifications.entitlements */,
 				29CBB0FF1DE6F71B00A75C3E /* AppDelegate.swift */,
 				29CBB1011DE6F71B00A75C3E /* ViewController.swift */,
 				29CBB1031DE6F71B00A75C3E /* Main.storyboard */,
 				29CBB1061DE6F71B00A75C3E /* Assets.xcassets */,
 				29CBB1081DE6F71B00A75C3E /* LaunchScreen.storyboard */,
 				29CBB10B1DE6F71B00A75C3E /* Info.plist */,
+				29CBB1111DE6F77700A75C3E /* GoogleService-Info.plist */,
 			);
 			path = "Push Notifications";
+			sourceTree = "<group>";
+		};
+		51F5F3DCB6903B326DB1600E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29D966A22B7A1A7038E46BCC /* Pods-Push Notifications.debug.xcconfig */,
+				124E2CC90E0E28291BE7A73A /* Pods-Push Notifications.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		94A31906D18C45B3D670FC79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84491FFD1E2C7A558AF6B54A /* Pods_Push_Notifications.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29CBB10E1DE6F71B00A75C3E /* Build configuration list for PBXNativeTarget "Push Notifications" */;
 			buildPhases = (
+				7FD740D1EE62495C329F2AE8 /* [CP] Check Pods Manifest.lock */,
 				29CBB0F81DE6F71B00A75C3E /* Sources */,
 				29CBB0F91DE6F71B00A75C3E /* Frameworks */,
 				29CBB0FA1DE6F71B00A75C3E /* Resources */,
+				2BE0463804E0F66593F96706 /* [CP] Embed Pods Frameworks */,
+				1900D3FBA4326EA4639F5B90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +130,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = R2HK8875FX;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -127,10 +164,59 @@
 				29CBB10A1DE6F71B00A75C3E /* LaunchScreen.storyboard in Resources */,
 				29CBB1071DE6F71B00A75C3E /* Assets.xcassets in Resources */,
 				29CBB1051DE6F71B00A75C3E /* Main.storyboard in Resources */,
+				29CBB1121DE6F77700A75C3E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1900D3FBA4326EA4639F5B90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Push Notifications/Pods-Push Notifications-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BE0463804E0F66593F96706 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Push Notifications/Pods-Push Notifications-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FD740D1EE62495C329F2AE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29CBB0F81DE6F71B00A75C3E /* Sources */ = {
@@ -182,6 +268,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -232,6 +319,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -259,10 +347,13 @@
 		};
 		29CBB10F1DE6F71B00A75C3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29D966A22B7A1A7038E46BCC /* Pods-Push Notifications.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Push Notifications/Push Notifications.entitlements";
 				DEVELOPMENT_TEAM = R2HK8875FX;
 				INFOPLIST_FILE = "Push Notifications/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codecture.Push-Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +363,13 @@
 		};
 		29CBB1101DE6F71B00A75C3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 124E2CC90E0E28291BE7A73A /* Pods-Push Notifications.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Push Notifications/Push Notifications.entitlements";
 				DEVELOPMENT_TEAM = R2HK8875FX;
 				INFOPLIST_FILE = "Push Notifications/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codecture.Push-Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +396,7 @@
 				29CBB1101DE6F71B00A75C3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
